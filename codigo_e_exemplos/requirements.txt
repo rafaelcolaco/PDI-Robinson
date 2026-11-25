@@ -1,0 +1,4 @@
+numpy==2.5.5
+opencv-python-headless==5.0.0.93
+scikit-image==0.26.0
+matplotlib==3.11.2

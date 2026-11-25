@@ -1,0 +1,12 @@
+# Fontes editáveis e scripts de geração de documentos (manter só local)
+artigo_robinson.md
+artigo_robinson.odt
+slides_robinson.pptx
+scripts_build/
+
+# Ambiente virtual e cache Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store

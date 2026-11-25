@@ -1,0 +1,130 @@
+{
+  "versoes": {
+    "opencv": "5.0.0",
+    "numpy": "2.5.5",
+    "scikit_image": "0.26.0"
+  },
+  "verificacao_matematica": {
+    "3niveis": {
+      "soma_coeficientes_oito_mascaras": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_abs_imagem_constante": 0.0,
+      "diff_max_magnitude_4_vs_8": 0.0,
+      "diff_max_magnitude_simd_vs_8": 0.0,
+      "concordancia_direcao_em_bordas_pct": 99.84848771803564,
+      "degrau_topo_claro_direcao": "N",
+      "degrau_esquerda_clara_direcao": "O",
+      "degrau_direita_clara_direcao": "L"
+    },
+    "5niveis": {
+      "soma_coeficientes_oito_mascaras": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_abs_imagem_constante": 0.0,
+      "diff_max_magnitude_4_vs_8": 0.0,
+      "diff_max_magnitude_simd_vs_8": 0.0,
+      "concordancia_direcao_em_bordas_pct": 99.85758887002247,
+      "degrau_topo_claro_direcao": "N",
+      "degrau_esquerda_clara_direcao": "O",
+      "degrau_direita_clara_direcao": "L"
+    }
+  },
+  "benchmark_4_vs_8": {
+    "3niveis": {
+      "convolucao_4_ms": 3.620230000024094,
+      "convolucao_8_ms": 18.945235500041235,
+      "aceleracao_convolucao_x": 5.233157976127249,
+      "magnitude_simd_4_ms": 8.892700000160403,
+      "magnitude_simd_8_ms": 12.646392000078777,
+      "aceleracao_magnitude_simd_x": 1.4221093705905592,
+      "completo_dir_4_ms": 52.809549999892624,
+      "completo_dir_8_ms": 73.72680349999428,
+      "aceleracao_completo_dir_x": 1.3960884631689567
+    },
+    "5niveis": {
+      "convolucao_4_ms": 3.607888000260573,
+      "convolucao_8_ms": 18.8494334997813,
+      "aceleracao_convolucao_x": 5.2245062758100955,
+      "magnitude_simd_4_ms": 8.678681999981563,
+      "magnitude_simd_8_ms": 12.454636500024208,
+      "aceleracao_magnitude_simd_x": 1.435083864122532,
+      "completo_dir_4_ms": 53.80868599991118,
+      "completo_dir_8_ms": 73.96667150010217,
+      "aceleracao_completo_dir_x": 1.37462326250123
+    }
+  },
+  "distribuicao_direcoes_pct": {
+    "3niveis": {
+      "N": 13.72701274597072,
+      "NO": 4.107876744758622,
+      "O": 23.73818677676559,
+      "SO": 3.6154618283744626,
+      "S": 15.63417359519706,
+      "SE": 3.5851593719815913,
+      "L": 29.42936686805174,
+      "NE": 6.16276206890021
+    },
+    "5niveis": {
+      "N": 10.306549086195249,
+      "NO": 6.866772562122291,
+      "O": 21.193697394606634,
+      "SO": 6.715232513556444,
+      "S": 12.464625440470321,
+      "SE": 5.833378977926275,
+      "L": 26.362491099304375,
+      "NE": 10.257252925818408
+    }
+  },
+  "falsas_bordas_ceu_y_lt_38pct": {
+    "3niveis_limpa_pct": 0.0,
+    "5niveis_limpa_pct": 0.0,
+    "5niveis_ruidosa_pct": 7.060975609756097,
+    "5niveis_suavizada_pct": 0.004065040650406504
+  },
+  "metricas_realce_recorte": {
+    "entrada_limpa": {
+      "std_ceu": 17.9362833494746
+    },
+    "entrada_ruidosa": {
+      "psnr_db": 26.218205220244805,
+      "ssim": 0.5031993271705327,
+      "std_ceu": 20.533809474167867
+    },
+    "realce_direto_ruidosa": {
+      "psnr_db": 27.04476004988097,
+      "ssim": 0.5007537135081022,
+      "std_ceu": 20.82138047926915
+    },
+    "so_gaussiano": {
+      "psnr_db": 29.464552938702525,
+      "ssim": 0.8440823237528727,
+      "std_ceu": 18.32279999340969
+    },
+    "gaussiano_realce_robinson": {
+      "psnr_db": 34.37491672191738,
+      "ssim": 0.8451812313527125,
+      "std_ceu": 18.443993212577098
+    }
+  },
+  "roundtrip_ycrcb": {
+    "original_erro_medio": 2.2862368541380887e-06,
+    "original_erro_max": 1,
+    "realce_crcb_erro_medio": 0.008617541152263375,
+    "realce_crcb_erro_max": 18
+  }
+}
